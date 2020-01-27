@@ -1,0 +1,317 @@
+/* General styling ========================================== */
+
+/* Header overall */
+header {
+  font-family: "Audiowide", "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  width: 100%;
+  height: 117px;
+  margin: 0;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px #777777;
+  z-index: 100;
+  line-height: 55px;
+}
+
+/* Title */
+header .row .title a {
+  background-color: rgb(84, 125, 141);
+  text-decoration: none;
+  display: inline;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 30px;
+  margin: 0;
+  font-size: 40px;
+  position: fixed;
+  top: 0;
+  left: 15%;
+}
+
+.title a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Nav */
+ul li {
+  font-family: "Encode Sans", "Helvetica Neue", Helvetica, sans-serif;
+  display: inline;
+  color: #777777;
+  /* margin: 10px; */
+}
+
+ul li a {
+  color: #777777;
+  padding: 0 10px;
+}
+
+ul li a:hover {
+  color: #777777;
+}
+
+/* Body styling ========================================== */
+body {
+  font-family: "Encode Sans", "Helvetica Neue", Helvetica, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  color: #777777;
+  background-image: url("../images/radoslav-bali-tX6VQ4URDWU-unsplash.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 135px auto;
+  box-shadow: 0 0 5px #777777;
+}
+
+section p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Encode Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(84, 125, 141);
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 10px;
+}
+
+.headshot {
+  float: left;
+  margin: 0 15px 0 0;
+  box-shadow: 0 2px 5px #777777;
+  border-radius: 4px;
+  padding: 0;
+}
+
+/* Footer styling ========================================== */
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  border-top: 10px solid rgb(84, 125, 141);
+  color: #9e9e9e;
+  box-shadow: 0 0 5px #777777;
+  z-index: 101;
+}
+
+/* Contact Form Styling */
+form {
+  margin: 5px 10px 10px;
+  overflow: hidden;
+}
+
+input {
+  width: 98%;
+  margin: 0 0 20px;
+  padding: 5px 5px;
+  float: left;
+  border: 1px solid #777777;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: rgb(84, 125, 141);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #777777;
+}
+
+textarea {
+  padding: 0 5px 75px;
+  width: 98%;
+  overflow: scroll;
+  resize: both;
+  border: 1px solid #777777;
+}
+
+/* Portfolio Styling     */
+.wrapper {
+  position: static;
+  overflow: hidden;
+}
+
+/* .wrapper p {
+    position: relative;
+    background-color: rgb(84, 125, 141);
+    color: #ffffff;
+    text-align: center;
+    height: 30px;
+    line-height: 30px; 
+    width: 400px;
+    margin: 0 auto;
+    display: inline-block;    
+} */
+
+.box {
+  position: relative;
+  width: 400px;
+  margin: 10px;
+  border-radius: 4px;
+  left: 0;
+}
+
+.label {
+  top: -50px;
+  left: 0;
+}
+
+.description {
+  margin: auto;
+}
+
+.image {
+  border-radius: 4px;
+  box-shadow: 0 5px 5px #777777;
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: #777777;
+}
+.portfolioTitle,
+.connect a,
+.github a {
+  color: rgb(84, 125, 141);
+  text-decoration: none;
+}
+
+.portfolioTitle:hover,
+.connect a:hover,
+.github a:hover {
+  color: #777777;
+  text-decoration: underline;
+  font-display: bold;
+}
+.github {
+  margin: 5px auto;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* General */
+  body {
+    width: 100%;
+  }
+
+  section {
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  .header {
+    padding: 17px 0;
+  }
+
+  header .row .header .title a {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  .nav nav {
+    margin: 40px 0;
+  }
+
+  .image {
+    width: 280px;
+  }
+  .description {
+    width: 100%;
+    margin: 0;
+    padding: 10px auto;
+  }
+  .wrapper .row {
+    margin: 0;
+  }
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px) {
+  /* General */
+  body {
+    width: 100%;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  section {
+    margin: 0;
+    padding: 100px 0;
+    width: 100%;
+  }
+
+  .header {
+    padding: 17px 0;
+  }
+
+  header .row .header .title a {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  .nav nav {
+    margin: 6px auto;
+  }
+
+  .nav ul {
+    padding: 0;
+  }
+  .main {
+    padding: 10px;
+  }
+  p {
+    padding: 5px 0;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+  .wrapper .box {
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .image {
+    width: 100%;
+  }
+  .github {
+    padding: 5px 0;
+  }
+  .connect {
+    padding: 0 20px;
+  }
+}
