@@ -286,12 +286,16 @@ a {
   .nav nav {
     margin: 6px auto;
   }
+  .headshot {
+    float: none;
+  }
 
   .nav ul {
     padding: 0;
   }
   .main {
     padding: 10px;
+    vertical-align: middle;
   }
   p {
     padding: 5px 0;
